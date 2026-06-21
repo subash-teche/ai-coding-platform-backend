@@ -1,0 +1,8 @@
+# Compiled JS output (TypeScript is source of truth)
+src/**/*.js
+src/**/*.jsx
+
+# Environment variables
+.env
+.env.local
+.env.*.local

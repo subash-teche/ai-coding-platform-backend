@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You have been invited to collaborate on MVP Apps</title>
+  <style>
+    body {
+      background-color: #f8fafc;
+      color: #0f172a;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrapper {
+      background-color: #f8fafc;
+      padding: 40px 20px;
+    }
+    .container {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      max-width: 580px;
+      margin: 0 auto;
+      overflow: hidden;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+    .header {
+      background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+      padding: 35px 40px;
+      text-align: left;
+    }
+    .logo {
+      border: 2px solid #ffffff;
+      border-radius: 8px;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      padding: 6px 12px;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+    .header h1 {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0;
+      letter-spacing: -0.5px;
+    }
+    .content {
+      padding: 40px;
+    }
+    .content p {
+      color: #334155;
+      font-size: 15px;
+      line-height: 1.6;
+      margin: 0 0 20px 0;
+    }
+    .content strong {
+      color: #0f172a;
+    }
+    .highlight-box {
+      background-color: #f1f5f9;
+      border: 1px dashed #cbd5e1;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .project-name {
+      color: #4f46e5;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+    }
+    .project-meta {
+      color: #64748b;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .cta-container {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .cta-btn {
+      background: linear-gradient(to right, #7c3aed, #4f46e5);
+      border: none;
+      border-radius: 12px;
+      color: #ffffff !important;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 14px 30px;
+      text-decoration: none;
+      box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.3);
+      transition: all 0.2s ease-in-out;
+    }
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -3px rgba(124, 58, 237, 0.5);
+    }
+    .footer {
+      border-top: 1px solid #e2e8f0;
+      padding: 30px 40px;
+      text-align: center;
+    }
+    .footer p {
+      color: #64748b;
+      font-size: 11px;
+      line-height: 1.5;
+      margin: 0 0 10px 0;
+    }
+    .footer a {
+      color: #7c3aed;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header">
+        <div class="logo">MVP</div>
+        <h1>Collaborate on MVP Apps</h1>
+      </div>
+      <div class="content">
+        <p>Hello,</p>
+        <p><strong>{{inviterName}}</strong> has invited you to collaborate on their cloud workspace sandbox project in MVP Apps Studio.</p>
+        
+        <div class="highlight-box">
+          <div class="project-name">{{projectName}}</div>
+          <div class="project-meta">Workspace Sandbox</div>
+        </div>
+
+        <p>{{subtext}}</p>
+
+        <div class="cta-container">
+          <a href="{{inviteUrl}}" class="cta-btn" target="_blank">{{ctaText}}</a>
+        </div>
+
+        <p>If you have any questions, feel free to reply directly to this email or contact your administrator.</p>
+        <p>Best regards,<br>The MVP Apps Team</p>
+      </div>
+      <div class="footer">
+        <p>This email was sent by MVP Apps Studio (Real-Time AI Cloud Workspace). You received this because you were invited to collaborate on a sandbox project.</p>
+        <p>&copy; 2026 MVP Apps. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
